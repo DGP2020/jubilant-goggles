@@ -1,0 +1,14 @@
+create table Company(Eid integer,Ename varchar(25),Esal integer,Edept varchar(25));
+insert into Company(Eid, Ename, Esal, Edept) values(1, "John", 1500, "Fin");
+insert into Company(Eid, Ename, Esal, Edept) values(2, "Jack", 2500, "Fin");
+insert into Company(Eid, Ename, Esal, Edept) values(3, "Alex", 1500, "IT");
+insert into Company(Eid, Ename, Esal, Edept) values(4, "Mike", 3000, "IT" );
+select * from Company;
+update Company set Esal=3500 where Ename="Alex";
+select * from Company;
+insert into Company values(5,"Joshua",2000, "IT");
+select * from Company;
+select * from Company where Edept="IT";
+select max(Esal) from Company;
+select avg(Esal) from Company;
+select min(Esal) from Company;
